@@ -3,10 +3,12 @@ const minutos = document.querySelector(".min")
 const segundos = document.querySelector(".seg")
 const daynight = document.querySelector(".day-night");
 const noite = document.querySelector(".s");
+const body = document.querySelector("body")
 
 daynight.addEventListener('click' , () => {
     daynight.classList.toggle("active")
-
+    body.classList.toggle("active")
+     
     
 })
 
@@ -39,7 +41,7 @@ const tempo = setInterval(function time(){
                 foto.src = 'img/manha.png'
                 }
                 else if(hora > 18 && hora < 0){
-                    foto.src = 'img/noite   .png'
+                    foto.src = 'img/noite.png'
                     }
     
 

@@ -47,6 +47,7 @@ body{
 }
 .h1z{
     margin-bottom: 30px;
+    text-shadow: 2px 2px 2px black;
 }
 
 .bar{
@@ -112,6 +113,26 @@ body{
 }
 .s, .x{
 width: 20px;
+}
+body.active .h1z{
+color: rgb(38, 15, 120);
+text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+body.active{
+    background-color: rgb(17, 8, 54);
+}
+body.active .card{
+    background-color: rgb(38, 15, 120);
+}
+body.active .card h1{
+    color: rgb(17, 8, 54);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    
+}
+body.active .card .hr ,body.active .card .min, body.active .card  .seg{
+    color: rgb(54, 23, 166);
+    
+
 }
 
 @media screen and (max-width:800px){
