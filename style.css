@@ -93,6 +93,7 @@ body{
 .day-night.active .bar3{
     opacity: 1;
     right: 10px;
+    transition: 0.5s;
 }
 .day-night{
     cursor: pointer;
