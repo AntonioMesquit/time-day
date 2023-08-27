@@ -1,6 +1,5 @@
 @charset "UTF-8";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +7,7 @@
     transition: 1s;
 }
 body{
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Outfit', sans-serif;
     background-color: rgba(14, 48, 183, 0.646);
     display: flex;
     justify-content: center;
@@ -125,12 +124,12 @@ body.active .card{
     background-color: rgb(38, 15, 120);
 }
 body.active .card h1{
-    color: rgb(17, 8, 54);
+    color: rgb(62, 26, 192);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     
 }
 body.active .card .hr ,body.active .card .min, body.active .card  .seg{
-    color: rgb(54, 23, 166);
+    color: rgb(67, 30, 199);
     
 
 }
