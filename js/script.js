@@ -34,13 +34,13 @@ const tempo = setInterval(function time(){
     if(hora >= 0 && hora <= 6){
         foto.src = 'img/madrugada.png'
         }
-        else if(hora > 6 && hora < 12){
+        else if(hora >= 6 && hora <= 12){
             foto.src = 'img/dia.png'
             }
-            else if(hora > 12 && hora < 18){
+            else if(hora >= 12 && hora <= 18){
                 foto.src = 'img/manha.png'
                 }
-                else if(hora > 18 && hora < 0){
+                else if(hora >= 18 && hora <= 0){
                     foto.src = 'img/noite.png'
                     }
     
