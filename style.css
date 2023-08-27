@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+body{
+    font-family: 'Fredoka One', cursive;
+    background-color: rgba(14, 48, 183, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.horario{
+    text-align: center;
+}
+.h1z{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.card{
+    background-color: white;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, 
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 25px;
+    padding: 30px;
+}
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.z{
+    width: 50%;
+}
+.h1z{
+    margin-bottom: 30px;
+}
+
+.bar{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(60, 80, 161, 0.646);
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+   box-shadow: inset 1px 0px 4px 1px rgba(255, 255, 255, 0.46);;
+}
+.bar2{
+    width: 28px;
+    height: 26px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+   
+}
+.bar3{
+    width: 28px;
+    height: 26px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.day-night.active .bar3{
+    opacity: 1;
+    right: 10px;
+}
+.day-night{
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.day-night.active .bar2{
+    right: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+.s, .x{
+width: 20px;
+}
+
+@media screen and (max-width:800px){
+    .card{
+        width: 90%;
+    }
+    .z{
+        width: 70%;
+    }
+    .horario h1{
+        font-size: 20px;
+    }
+
+}
